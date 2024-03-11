@@ -3,14 +3,14 @@
     display: block;
     top: 50%;
     z-index: 2;
-    color: #fff;
+    color: red;
+    background-color: #ffffff;
     text-transform: uppercase;
     padding: 9px 12px;
-    background-color: transparent;
-    border: 2px solid rgba(255, 255, 255, .5);
-    border-radius: 4px;
-    box-shadow: 0 .25em .5em 0 rgba(0, 0, 0, .1);
-    text-shadow: 0 .25em .5em rgba(0, 0, 0, .1);
+    border: 2px solid red;
+    border-radius: 50px;
+    box-shadow: 0 .25em .5em 0 rgba(red, .1);
+    text-shadow: 0 .25em .5em rgba(red, .1);
     opacity: 1;
     cursor: pointer;
     transition: opacity 150ms ease, border 300ms ease-in-out;
@@ -27,11 +27,11 @@
 }
 
 .glide__arrow--left {
-    left: 2em
+    left: 0
 }
 
 .glide__arrow--right {
-    right: 2em
+    right: 0
 }
 
 .glide__arrow--disabled {
