@@ -10,11 +10,43 @@
     <link rel="stylesheet" href="/assets/css/style.css" />
     <link rel="stylesheet" href="/assets/css/glide.core.min.css" />
     <link rel="stylesheet" href="/assets/css/glide.theme.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" href="/assets/css/leaflet.css" />
 </head>
 
 <body>
-    <header>
-        <nav></nav>
+    <header id="header">
+        <img src="/assets/images/logo.jpg" id="logo" alt="logo">
+        <!-- Navgation -->
+        <nav id="navMenu">
+            <ul>
+                <li><a class="backtotop">Home</a></li>
+                <li><a class="category" data-target="category">Explore rooms</a></li>
+                <li><a class="deal" data-target="deal">Shop deals</a></li>
+                <li><a class="gallery" data-target="gallery">Inspiration</a></li>
+                <li><a class="services" data-target="services">Our services</a></li>
+                <li><a class="stores" data-target="stores">IKEA stores</a></li>
+            </ul>
+        </nav>
+        <!-- Mobile navgation -->
+        <nav id="burger">
+            <figure class="line1"></figure>
+            <figure class="line2"></figure>
+            <figure class="line3"></figure>
+            <ul id="mobileMenu" class="fade">
+                <li><a class="backtotop">Home</a></li>
+                <hr>
+                <li><a class="category" data-target="category">Explore rooms</a></li>
+                <hr>
+                <li><a class="deal" data-target="deal">Shop deals</a></li>
+                <hr>
+                <li><a class="categgalleryory" data-target="gallery">Inspiration</a></li>
+                <hr>
+                <li><a class="services" data-target="services">Our services</a></li>
+                <hr>
+                <li><a class="stores" data-target="stores">IKEA stores</a></li>
+            </ul>
+        </nav>
     </header>
     <!-- headbanner -->
     <section>
@@ -22,7 +54,7 @@
     </section>
     <!-- category -->
     <section id="category">
-        <h2>Discover ways to Bring Home to Life</h2>
+        <h1>Discover ways to Bring Home to Life</h1>
         <div class="glide">
             <div class="glide__track" data-glide-el="track">
                 <ul class="glide__slides">
@@ -68,12 +100,13 @@
         </div>
     </section>
     <!-- featured product -->
-    <section>
-        <h2>The IKEA spring SALE</h2>
+    <section id="deal" data-aos="fade-right">
+        <h1>The IKEA spring SALE</h1>
+        <div id="headbanner"><img src="/assets/images/headbanner.jpg" alt="Welcome to IKEA" /></div>
     </section>
     <!-- gallery -->
-    <section id="gallery">
-        <h2>More ideas and inspiration</h2>
+    <section id="gallery" data-aos="fade-left">
+        <h1>More ideas and inspiration</h1>
         <div class="grid">
             <div class="grid-sizer"></div>
             <div class="grid-item">
@@ -114,12 +147,29 @@
             </div>
         </div>
     </section>
+<!-- IKEA services -->
+<section id="services" data-aos="fade-right">
+    <h1>IKEA services</h1>
+</section>
+    <!-- IKEA Stores -->
+    <section id="stores" data-aos="fade-left">
+        <div>
+            <h1>Furniture and inspiration to Bring Home to Life</h1>
+            <p>At IKEA Canada you will find well-designed furniture, home décor and accessories that are functional and affordable. We have everything from IKEA Kitchens and smart home solutions to a large selection of modern bedroom furniture, sofas, lighting, curtains, bedding and more. Explore an IKEA furniture store near you or browse IKEA.ca to find design inspiration and get tons of decoration ideas that will help you live in a much more comfortable and sustainable way. Discover our wide selection of products in store or online!</p>
+        </div>
+        <div id="map"></div>
+    </section>
     <!-- footer -->
-    <footer></footer>
+    <footer>
+        <h1>this is footer</h1>
+        <p>© Inter IKEA Systems B.V. 1999-2024</p>
+    </footer>
     <!-- JS script -->
     <script src="/assets/js/glide.min.js"></script>
     <script src="/assets/js/masonry.pkgd.min.js"></script>
     <script src="/assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="/assets/js/leaflet.js"></script>
     <script src="/assets/js/main.js"></script>
 </body>
 
