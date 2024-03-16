@@ -173,7 +173,7 @@ header {
 
 #navMenu ul li a {
     font-family: 'Noto Sans', sans-serif;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: bold;
     color: black;
     text-decoration: none;
@@ -191,6 +191,10 @@ header {
 }
 
 @media screen and (min-width: 768px) {
+    header {
+            height: 80px;
+        }
+
     #logo {
         width: 100px;
         height: auto;
@@ -235,6 +239,10 @@ header {
 
 /* headbanner responsive */
 @media screen and (min-width: 768px) {
+    #headbanner {
+        margin-top: 80px;
+    }
+
     #headbanner div h1 {
         font-size: 50px;
     }
