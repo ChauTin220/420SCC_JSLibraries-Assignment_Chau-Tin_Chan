@@ -3,14 +3,14 @@
     display: block;
     top: 50%;
     z-index: 2;
-    color: red;
-    background-color: #ffffff;
+    color: white;
+    background-color: #333333;
     text-transform: uppercase;
     padding: 9px 12px;
-    border: 2px solid red;
+    border: 0px solid #333333;
     border-radius: 50px;
-    box-shadow: 0 .25em .5em 0 rgba(red, .1);
-    text-shadow: 0 .25em .5em rgba(red, .1);
+    /* box-shadow: 0 .25em .5em 0 rgba(red, .1);
+    text-shadow: 0 .25em .5em rgba(red, .1); */
     opacity: 1;
     cursor: pointer;
     transition: opacity 150ms ease, border 300ms ease-in-out;
@@ -23,15 +23,15 @@
 }
 
 .glide__arrow:hover {
-    border-color: #fff
+    background-color: #f9d716
 }
 
 .glide__arrow--left {
-    left: 0
+    left: -15px
 }
 
 .glide__arrow--right {
-    right: 0
+    right: 10px
 }
 
 .glide__arrow--disabled {
@@ -89,3 +89,10 @@
 }
 
 /*# sourceMappingURL=glide.theme.min.css.map */
+
+/* responsive */
+@media screen and (min-width: 768px) {
+    .glide__arrow--right {
+        right: -15px
+    }
+}

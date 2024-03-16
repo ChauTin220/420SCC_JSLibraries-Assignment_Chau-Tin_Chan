@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,18 +9,16 @@
     <link rel="stylesheet" href="/assets/css/style.css" />
     <link rel="stylesheet" href="/assets/css/glide.core.min.css" />
     <link rel="stylesheet" href="/assets/css/glide.theme.min.css" />
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" href="/assets/css/aos.css" />
     <link rel="stylesheet" href="/assets/css/leaflet.css" />
 </head>
-
 <body>
     <header id="header">
-        <img src="/assets/images/logo.jpg" id="logo" alt="logo">
-        <!-- Navgation -->
+        <img src="/assets/images/logo.jpg" id="logo" alt="IKEA">
+        <!-- Desktop navgation -->
         <nav id="navMenu">
             <ul>
                 <li><a class="backtotop">Home</a></li>
-                <li><a class="category" data-target="category">Explore rooms</a></li>
                 <li><a class="deal" data-target="deal">Shop deals</a></li>
                 <li><a class="gallery" data-target="gallery">Inspiration</a></li>
                 <li><a class="services" data-target="services">Our services</a></li>
@@ -30,13 +27,11 @@
         </nav>
         <!-- Mobile navgation -->
         <nav id="burger">
-            <figure class="line1"></figure>
-            <figure class="line2"></figure>
-            <figure class="line3"></figure>
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
             <ul id="mobileMenu" class="fade">
                 <li><a class="backtotop">Home</a></li>
-                <hr>
-                <li><a class="category" data-target="category">Explore rooms</a></li>
                 <hr>
                 <li><a class="deal" data-target="deal">Shop deals</a></li>
                 <hr>
@@ -48,110 +43,166 @@
             </ul>
         </nav>
     </header>
-    <!-- headbanner -->
+    <!-- headbanner session -->
     <section>
-        <div id="headbanner"><img src="/assets/images/headbanner.jpg" alt="Welcome to IKEA" /></div>
+        <div id="headbanner"><img src="/assets/images/headbanner_mobile.jpg" alt="Welcome to IKEA" />
+            <div>
+                <h1>Make yourself at home</h1>
+                <p>Experience true enjoyment with next-level organization, handling schedules and belongings effortlessly, the IKEA way.</p>
+            </div>    
+        </div>
     </section>
-    <!-- category -->
+    <!-- category session -->
     <section id="category">
-        <h1>Discover ways to Bring Home to Life</h1>
+        <!-- <h1>Discover ways to Bring Home to Life</h1> -->
         <div class="glide">
             <div class="glide__track" data-glide-el="track">
                 <ul class="glide__slides">
-                    <li class="glide__slide"><img src="/assets/images/room01.jpg" alt="Living Room" />
-                        <h6>Living Room</h6>
+                    <li class="glide__slide cat_slide"><img src="/assets/images/room01.jpg" alt="Living Room Category" />
+                        <h2>Living Room</h2>
                     </li>
-                    <li class="glide__slide"><img src="/assets/images/room02.jpg" alt="Kitchen" />
-                        <h6>Kitchen</h6>
+                    <li class="glide__slide cat_slide"><img src="/assets/images/room02.jpg" alt="Kitchen Category" />
+                        <h2>Kitchen</h2>
                     </li>
-                    <li class="glide__slide"><img src="/assets/images/room03.jpg" alt="Bedroom" />
-                        <h6>Bedroom</h6>
+                    <li class="glide__slide cat_slide"><img src="/assets/images/room03.jpg" alt="Bedroom Category" />
+                        <h2>Bedroom</h2>
                     </li>
-                    <li class="glide__slide"><img src="/assets/images/room04.jpg" alt="Baby Room" />
-                        <h6>Baby Room</h6>
+                    <li class="glide__slide cat_slide"><img src="/assets/images/room04.jpg" alt="Baby Room Category" />
+                        <h2>Baby Room</h2>
                     </li>
-                    <li class="glide__slide"><img src="/assets/images/room05.jpg" alt="Bathroom" />
-                        <h6>Bathroom</h6>
+                    <li class="glide__slide cat_slide"><img src="/assets/images/room05.jpg" alt="Bathroom Category" />
+                        <h2>Bathroom</h2>
                     </li>
-                    <li class="glide__slide"><img src="/assets/images/room06.jpg" alt="Laundry" />
-                        <h6>Laundry</h6>
+                    <li class="glide__slide cat_slide"><img src="/assets/images/room06.jpg" alt="Laundry Category" />
+                        <h2>Laundry</h2>
                     </li>
-                    <li class="glide__slide"><img src="/assets/images/room07.jpg" alt="Hallway" />
-                        <h6>Hallway</h6>
+                    <li class="glide__slide cat_slide"><img src="/assets/images/room07.jpg" alt="Hallway Category" />
+                        <h2>Hallway</h2>
                     </li>
-                    <li class="glide__slide"><img src="/assets/images/room08.jpg" alt="Outdoor" />
-                        <h6>Outdoor</h6>
+                    <li class="glide__slide cat_slide"><img src="/assets/images/room08.jpg" alt="Outdoor Category" />
+                        <h2>Outdoor</h2>
                     </li>
-                    <li class="glide__slide"><img src="/assets/images/room09.jpg" alt="Dining Room" />
-                        <h6>Dining Room</h6>
+                    <li class="glide__slide cat_slide"><img src="/assets/images/room09.jpg" alt="Dining Room Category" />
+                        <h2>Dining Room</h2>
                     </li>
-                    <li class="glide__slide"><img src="/assets/images/room10.jpg" alt="Gaming Room" />
-                        <h6>Gaming Room</h6>
+                    <li class="glide__slide cat_slide"><img src="/assets/images/room10.jpg" alt="Gaming Room Category" />
+                        <h2>Gaming Room</h2>
                     </li>
-                    <li class="glide__slide"><img src="/assets/images/room11.jpg" alt="Home Office" />
-                        <h6>Home Office</h6>
+                    <li class="glide__slide cat_slide"><img src="/assets/images/room11.jpg" alt="Home Office Category" />
+                        <h2>Home Office</h2>
                     </li>
                 </ul>
             </div>
             <div class="glide__arrows" data-glide-el="controls">
-                <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
-                <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+                <button type="button" class="glide__arrow glide__arrow--left" data-glide-dir="<"><</button>
+                <button type="button" class="glide__arrow glide__arrow--right" data-glide-dir=">">></button>
             </div>
         </div>
     </section>
-    <!-- featured product -->
+    <!-- deal session -->
     <section id="deal" data-aos="fade-right">
-        <h1>The IKEA spring SALE</h1>
-        <div id="headbanner"><img src="/assets/images/headbanner.jpg" alt="Welcome to IKEA" /></div>
+        <h1>The IKEA Spring SALE</h1>
+        <p>What better way to celebrate spring than with a sale? Explore our wide selection of fresh savings! Valid March 7 – 27, 2024.</p>
+        <div id="deal_container"><a href=""><img src="/assets/images/salebanner_mobile.jpg" alt="IKEA Spring SALE from March 7 to 27, 2024." /></a></div>
     </section>
-    <!-- gallery -->
+    <!-- gallery session -->
     <section id="gallery" data-aos="fade-left">
         <h1>More ideas and inspiration</h1>
         <div class="grid">
             <div class="grid-sizer"></div>
             <div class="grid-item">
-                <img src="/assets/images/photo01.jpg" alt="" />
+                <img src="/assets/images/photo01.jpg" alt="A brown, curly dog atop a bed made with JUNIMAGNOLIA blue-and-white-patterned bed linen." />
             </div>
             <div class="grid-item">
-                <img src="/assets/images/photo02.jpg" alt="" />
+                <img src="/assets/images/photo02.jpg" alt="White EKENABBEN open shelving unit holds storage baskets, books and stationery in a bright living room setting." />
             </div>
             <div class="grid-item">
-                <img src="/assets/images/photo03.jpg" alt="" />
+                <img src="/assets/images/photo03.jpg" alt="Close-up view of white geometric shaped pendant lamp, white frames on white wall shelf, decorative object, in living room." />
             </div>
             <div class="grid-item">
-                <img src="/assets/images/photo04.jpg" alt="" />
+                <img src="/assets/images/photo04.jpg" alt="A wooden table holds a group of mixed clear glass vases, including a curved BERÄKNA clear glass vase with a plant sprig." />
             </div>
             <div class="grid-item">
-                <img src="/assets/images/photo05.jpg" alt="" />
+                <img src="/assets/images/photo05.jpg" alt="Kitchen counter with multiple food containers with lid, one with lid on counter, kitchen mixer tap, and soap dispenser." />
             </div>
             <div class="grid-item">
-                <img src="/assets/images/photo06.jpg" alt="" />
+                <img src="/assets/images/photo06.jpg" alt="Living room with a brown table lamp, a nest of two tables, a plant pot, a basket, and a beige armchair." />
             </div>
             <div class="grid-item">
-                <img src="/assets/images/photo07.jpg" alt="" />
+                <img src="/assets/images/photo07.jpg" alt="A person uses an extra long, anthracite OMTÄNKSAM shoehorn to put on shoes on while standing up by a white chest of drawers." />
             </div>
             <div class="grid-item">
-                <img src="/assets/images/photo08.jpg" alt="" />
+                <img src="/assets/images/photo08.jpg" alt="Hands hold a transparent SAMLA box filled with tableware, glass bottles and food containers strapped to ice packs." />
             </div>
             <div class="grid-item">
-                <img src="/assets/images/photo09.jpg" alt="" />
+                <img src="/assets/images/photo09.jpg" alt="A white KALLAX shelving unit standing against a wall in a white home office with various items and an attached desk." />
             </div>
             <div class="grid-item">
-                <img src="/assets/images/photo10.jpg" alt="" />
+                <img src="/assets/images/photo10.jpg" alt="Modern bedroom with three pillows in light pink and light green pillowcases next to feathered accessories." />
             </div>
             <div class="grid-item">
-                <img src="/assets/images/photo11.jpg" alt="" />
+                <img src="/assets/images/photo11.jpg" alt="Close-up of white SKÅDIS pegboard with stationery containers, headphones and drawings attached to it." />
             </div>
             <div class="grid-item">
-                <img src="/assets/images/photo12.jpg" alt="" />
+                <img src="/assets/images/photo12.jpg" alt="NORDLI bed frame in a bright bedroom with white quilt cover and pillowcase and a white airy-shaped pendant lamp." />
+            </div>
+            <div class="grid-item">
+                <img src="/assets/images/photo13.jpg" alt="An aerial view of a tap and a BREDSJÖN, underglued stainless steel sink with two bowls, by a windowsill with potted plants." />
+            </div>
+            <div class="grid-item">
+                <img src="/assets/images/photo14.jpg" alt="A child standing on a VILTO stool in front of their pregnant mum who is touching their face. A SNIGLAR cot is behind them." />
+            </div>
+            <div class="grid-item">
+                <img src="/assets/images/photo15.jpg" alt="A white HAUGA desk between two drawer units in front of a window with an open laptop on top and a work chair in front of it." />
+            </div>
+            <div class="grid-item">
+                <img src="/assets/images/photo16.jpg" alt="Living room with large white wooden storage combination with glass doors, white wall shelves, white desk, and beige chair." />
             </div>
         </div>
+        <button type="button" id="load-more-btn">Load 4 more</button>
     </section>
-<!-- IKEA services -->
+<!-- IKEA services session -->
 <section id="services" data-aos="fade-right">
     <h1>IKEA services</h1>
+    <div class="glide-services">
+        <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+                <li class="glide__slide ser_slide"><img src="/assets/images/services01.jpg" alt="Free Click and collect for IKEA Family members service" />
+                    <button type="button">Free Click and collect for IKEA Family members</button>
+                </li>
+                <li class="glide__slide ser_slide"><img src="/assets/images/services02.jpg" alt="IKEA Delivery" />
+                    <button type="button">Delivery</button>
+                </li>
+                <li class="glide__slide ser_slide"><img src="/assets/images/services03.jpg" alt="IKEA Pick-up locations services" />
+                    <button type="button">Pick-up locations</button>
+                </li>
+                <li class="glide__slide ser_slide"><img src="/assets/images/services04.jpg" alt="IKEA Financial services" />
+                    <button type="button">Financial services</button>
+                </li>
+                <li class="glide__slide ser_slide"><img src="/assets/images/services05.jpg" alt="IKEA Assembly and mounting services" />
+                    <button type="button">Assembly and mounting</button>
+                </li>
+                <li class="glide__slide ser_slide"><img src="/assets/images/services06.jpg" alt="IKEA Kitchen services" />
+                    <button type="button">Kitchen services</button>
+                </li>
+                <li class="glide__slide ser_slide"><img src="/assets/images/services07.jpg" alt="Planning services" />
+                    <button type="button">Planning</button>
+                </li>
+                <li class="glide__slide ser_slide"><img src="/assets/images/services08.jpg" alt="Installation services" />
+                    <button type="button">Installation</button>
+                </li>
+                <li class="glide__slide ser_slide"><img src="/assets/images/services09.jpg" alt="Business services" />
+                    <button type="button">Business services</button>
+                </li>
+            </ul>
+        </div>
+        <div class="glide__arrows" data-glide-el="controls">
+            <button type="button" class="glide__arrow ser__arrow ser__arrow--left " data-glide-dir="<"><</button>
+            <button type="button" class="glide__arrow ser__arrow ser__arrow--right" data-glide-dir=">">></button>
+        </div>
+    </div>
 </section>
-    <!-- IKEA Stores -->
+    <!-- IKEA Stores session -->
     <section id="stores" data-aos="fade-left">
         <div>
             <h1>Furniture and inspiration to Bring Home to Life</h1>
@@ -161,14 +212,48 @@
     </section>
     <!-- footer -->
     <footer>
-        <h1>this is footer</h1>
-        <p>© Inter IKEA Systems B.V. 1999-2024</p>
+        <div>
+            <img src="/assets/images/logo.jpg" alt="footer IKEA">
+            <ul>
+                <li><a href="">About IKEA</a></li>
+                <li><a href="">Jobs</a></li>
+                <li><a href="">Life at home</a></li>
+                <li><a href="">A sustainable everyday</a></li>
+                <li><a href="">IKEA Foundation</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">FAQ</a></li>
+            </ul>
+        </div>
+        <hr>
+        <div id="footersmall">
+            <h4>© Inter IKEA Systems B.V. 1999-2024</h4>
+            <ul>
+                <li>
+                    <h4>Privacy policy</h4>
+                </li>
+                <li>
+                    <h4>Cookie policy</h4>
+                </li>
+                <li>
+                    <h4>Cookie settings</h4>
+                </li>
+                <li>
+                    <h4>Responsible Disclosure Policy</h4>
+                </li>
+                <li>
+                    <h4>Terms & conditions</h4>
+                </li>
+                <li>
+                    <h4>Accessibility</h4>
+                </li>
+            </ul>
+        </div>
     </footer>
     <!-- JS script -->
     <script src="/assets/js/glide.min.js"></script>
     <script src="/assets/js/masonry.pkgd.min.js"></script>
     <script src="/assets/js/imagesloaded.pkgd.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="/assets/js/aos.js"></script>
     <script src="/assets/js/leaflet.js"></script>
     <script src="/assets/js/main.js"></script>
 </body>

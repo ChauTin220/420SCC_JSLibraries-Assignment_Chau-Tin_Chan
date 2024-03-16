@@ -1,21 +1,56 @@
 h1 {
-    color: red;
-    font-size: 50px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    color: black;
+    line-height: 32px;
+    margin-bottom: 15px;
 }
 
-body {
-    background-color: blue;
+h2 {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 5px black;
+}
 
+h3 {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: -10px;
+}
+
+h4 {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 12px;
+    color: black;
 }
 
 p {
-    color: green;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 16px;
+    color: black;
+    line-height: 24px;
 }
 
-section {
-    margin-bottom: 30px;
-    /* text-align: center; */
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
 
+a {
+    cursor: pointer;
+}
+
+#category,
+#gallery,
+#deal,
+#services,
+#stores {
+    margin-bottom: 50px;
+    padding: 0 5vw;
 }
 
 /* --------------------------------------------------------------------------------------------- header --------------------------------------------------------------------------------------------- */
@@ -30,6 +65,7 @@ header {
     position: fixed;
     top: 0;
     z-index: 10;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.35);
 }
 
 #logo {
@@ -38,52 +74,14 @@ header {
     margin-left: 5vw;
 }
 
-#navMenu {
+/* hamburger icon */
+#burger {
+    display: none;
+    cursor: pointer;
     margin-right: 5vw;
 }
 
-#navMenu ul {
-    width: 100%;
-    height: 6vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-}
-
-#navMenu ul li {
-    padding: 5px;
-    margin-left: 5px;
-}
-
-#navMenu ul li a {
-    font-family: 'Poppins', sans-serif;
-    font-size: 14px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-#navMenu ul li:hover {
-    transition: transform .2s;
-    transform: scale(1.2);
-}
-
-#navMenu ul li a:hover {
-    transition: color .2s;
-    color: red;
-}
-
-/* hamburger icon */
-#burger {
-    margin: auto 5vw auto auto;
-    display: none;
-    cursor: pointer;
-}
-
-#burger figure {
+#burger div {
     width: 40px;
     height: 5px;
     background-color: black;
@@ -130,16 +128,15 @@ header {
 }
 
 #mobileMenu hr {
-    border: red solid 1px;
+    border: #0058a2 solid 1px;
     width: 80vw;
     margin: 3vh 0 3vh 0;
 }
 
 #mobileMenu li a {
-    font-family: 'Poppins', sans-serif;
-    font-size: 40px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 35px;
     font-weight: bold;
-    text-transform: uppercase;
     color: black;
     text-decoration: none;
 }
@@ -151,82 +148,198 @@ header {
 
 #mobileMenu li a:hover {
     transition: color .2s;
-    color: red;
+    color: #f9d716;
 }
 
-/* Navigation responsive */
+/* desktop nav */
+#navMenu {
+    margin-right: 5vw;
+}
+
+
+#navMenu ul {
+    width: 100%;
+    height: 6vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+#navMenu ul li {
+    padding: 5px;
+    margin-left: 14px;
+}
+
+#navMenu ul li a {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#navMenu ul li:hover {
+    transition: transform .2s;
+    transform: scale(1.2);
+}
+
+#navMenu ul li a:hover {
+    transition: color .2s;
+    color: #f9d716;
+}
+
 @media screen and (min-width: 768px) {
-    header {
-        height: 8vh;
-        padding: 0 50px;
-    }
-
-    #navMenu {
-        padding-right: 50px;
-    }
-
-    #navMenu ul li {
-        margin-left: 14px;
-    }
-
-    #navMenu ul li a {
-        font-size: 13px;
+    #logo {
+        width: 100px;
+        height: auto;
     }
 }
 
 /* --------------------------------------------------------------------------------------------- headbanner --------------------------------------------------------------------------------------------- */
-#headbanner img {
-    width: 100%;
+#headbanner {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    margin-top: 8vh;
 }
 
-/* --------------------------------------------------------------------------------------------- category --------------------------------------------------------------------------------------------- */
-#category,
-#gallery,
-#deal,
-#services,
-#stores {
+#headbanner img {
+    width: 100%;
+    height: auto;
+    opacity: 0.7;
+}
+
+#headbanner div {
+    position: absolute;
+    /* transform: translate(0, 35px); */
+    z-index: 1;
+    margin: 0;
+    text-align: center;
+    text-shadow: 1px 1px 5px black;
     padding: 0 50px;
 }
 
+#headbanner div h1 {
+    font-size: 35px;
+    line-height: 45px;
+    color: white;
+}
+
+#headbanner div p {
+    color: white;
+}
+
+/* headbanner responsive */
+@media screen and (min-width: 768px) {
+    #headbanner div h1 {
+        font-size: 50px;
+    }
+
+    #headbanner img {
+        content: url('/assets/images/headbanner_desktop.jpg');
+    }
+
+}
+
+/* --------------------------------------------------------------------------------------------- category --------------------------------------------------------------------------------------------- */
+#category {
+    margin-bottom: auto;
+    padding-right: 0;
+}
+
+.glide {
+    top: -50px;
+    background-color: black;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.5);
+}
+
 .glide__slide {
-    width: 300px;
-    /* Adjust the width as needed */
-    height: 200px;
-    /* Adjust the height as needed */
     overflow: hidden;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     position: relative;
-    /* Needed for absolute positioning */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.glide__slide img {
+.cat_slide {
+    width: 300px;
+    height: 200px;
+}
+
+.cat_slide img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    opacity: 1;
+    transition: 0.3s;
 }
 
-.glide__slide h6 {
+.cat_slide img:hover {
+    opacity: 0.35;
+    filter: blur(3px);
+}
+
+.cat_slide h2 {
     position: absolute;
     z-index: 1;
-    /* Ensure the h6 appears above the image */
     margin: 0;
 }
 
+/* headbanner responsive */
+@media screen and (min-width: 768px) {
+    #category {
+        padding-right: 50px;
+        margin-bottom: 60px;
+    }
+}
+
 /* --------------------------------------------------------------------------------------------- Sale --------------------------------------------------------------------------------------------- */
+#deal_container {
+    margin-top: 15px;
+}
 
+#deal_container a img {
+    width: 100%;
+}
 
+/* sale responsive */
+@media screen and (min-width: 768px) {
+    #deal_container a img {
+        content: url('/assets/images/salebanner_desktop.jpg');
+    }
+}
 
 /* --------------------------------------------------------------------------------------------- masonry --------------------------------------------------------------------------------------------- */
-.grid-sizer,
-.grid-item {
-    width: 50%;
+#gallery {
+    text-align: center;
+}
+
+#gallery h1 {
+    text-align: left;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 }
 
 .grid-item {
+    display: none;
     float: left;
+}
+
+.show {
+    display: block;
+}
+
+.grid-sizer,
+.grid-item {
+    width: 50%;
 }
 
 .grid-item img {
@@ -235,7 +348,28 @@ header {
     height: auto;
 }
 
+#load-more-btn {
+    background-color: white;
+    border-radius: 70px;
+    border: 1px solid black;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+    width: 140px;
+    height: 45px;
+    margin-top: 40px;
+    cursor: pointer;
+    transition: 0.3s;
+}
 
+#load-more-btn:hover {
+    background-color: gray;
+    border: none;
+    color: white;
+}
+
+/* masonry responsive */
 @media screen and (min-width: 768px) {
 
     .grid-sizer,
@@ -245,7 +379,64 @@ header {
 }
 
 /* --------------------------------------------------------------------------------------------- IKEA services --------------------------------------------------------------------------------------------- */
+#services,
+#stores {
+    margin-bottom: 80px;
+}
 
+.ser_slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ser_slide button {
+    position: absolute;
+    z-index: 1;
+    margin: 0;
+    background-color: white;
+    border-radius: 70px;
+    border: none;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: black;
+    width: 150px;
+    height: auto;
+    margin-top: 160px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.ser_slide button:hover {
+    background-color: black;
+    color: white;
+}
+
+.ser__arrow--left {
+    left: 10px
+}
+
+.ser__arrow--right {
+    right: 10px
+}
+
+/* services responsive */
+@media screen and (min-width: 768px) {
+
+    .ser_slide button {
+        margin-top: 140px;
+    }
+
+    .ser__arrow--left {
+        left: 45px
+    }
+
+    .ser__arrow--right {
+        right: 45px
+    }
+}
 
 /* --------------------------------------------------------------------------------------------- IKEA Stores --------------------------------------------------------------------------------------------- */
 #stores {
@@ -265,14 +456,13 @@ header {
     width: 100%;
 }
 
-
+/* store responsive */
 @media screen and (min-width: 768px) {
     #stores {
         display: flex;
         align-content: center;
         justify-content: center;
     }
-
 
     #stores div:nth-child(1) {
         width: 600px;
@@ -283,6 +473,86 @@ header {
 
 /* --------------------------------------------------------------------------------------------- footer --------------------------------------------------------------------------------------------- */
 footer {
-    background-color: gray;
-    height: 300px;
+    background-color: #f5f5f5;
+    padding: 40px 5vw;
+    height: auto;
+    text-align: center;
+}
+
+footer div img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+footer div ul li {
+    margin-bottom: 16px;
+}
+
+footer div ul li a {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 16px;
+    color: black;
+    line-height: 24px;
+    text-decoration: none;
+}
+
+footer hr {
+    margin: 20px 0;
+    opacity: 0.5;
+}
+
+#footersmall ul {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#footersmall ul li {
+    flex-basis: 50%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+/* footer responsive */
+@media screen and (min-width: 768px) {
+    footer div:nth-child(1) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    footer div img {
+        margin-bottom: 0px;
+    }
+
+    footer div ul {
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    footer div ul li {
+        margin-bottom: 0;
+    }
+
+    #footersmall {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #footersmall ul {
+        width: 65%;
+        margin-top: 0;
+        flex-wrap: nowrap;
+    }
+
+    #footersmall ul li {
+        flex-basis: 100%;
+    }
 }
