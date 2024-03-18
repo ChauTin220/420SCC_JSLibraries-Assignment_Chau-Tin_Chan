@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', function () {
   var batchSize = 4;
   var currentItemIndex = 0;
 
-  // Function to reset layout by hiding all items
+  // Reset layout & hide all items
   function resetLayout() {
     gridItems.forEach(function (item) {
       item.classList.remove('show');
@@ -101,7 +101,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // console.log("layout updated");
   }
 
-  // Initially show the first batch of items
+  //  Show the first batch
   showNextItems();
 
   // Load more button
